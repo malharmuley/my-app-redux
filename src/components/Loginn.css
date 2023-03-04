@@ -1,0 +1,46 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.label1{
+    width: 100px;
+    display: inline-block;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page{
+    height: 100vh;
+    width : 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.cover{
+    background-color: rgb(238, 237, 237); 
+    width: 40em;
+    height: 35em;
+    position: static;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+
+}
