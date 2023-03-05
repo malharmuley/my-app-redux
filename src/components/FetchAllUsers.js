@@ -1,32 +1,3 @@
-// import React, { useEffect } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { Link } from 'react-router-dom';
-// import { getAllUsers } from '../store/actions/UserAction';
-
-// function FetchAllUsers() {
-
-//     const users = useSelector(state => state.userReducer.users);
-//     const dispatch = useDispatch();
-
-//     useEffect(() => {
-//         dispatch (getAllUsers());
-//     }, [])
-
-//     return (
-//         <div>
-//             {
-//                 users.length > 0 &&
-//                 users.map(u =>
-//                     <div>
-//                         {u.firstName} {u.lastName} {u.emailAddress}
-//                           <Link to = {`/user/${u.id}`}>View</Link>
-
-//                     </div>)
-//             }
-//         </div>
-//     )
-// }
-// export default FetchAllUsers;
 
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -75,7 +46,9 @@ function FetchAllUsers() {
                     </tbody>
                 </table>
                 <div>
-                    <button className='btn-btn-primary'><Link to="/admin/dashboard">Go Back</Link></button>
+                    {/* <button className='btn btn-primary' ><Link to="/admin/dashboard">Go Back</Link></button> */}
+                    {/* <Link to ={`/user/${myuser.id}`} className="btn btn-info dropdown-item">Profile </Link> */}
+                    <Link to={'/admin/dashboard'} className='btn btn-primary'>Go Back</Link>
                 </div>
             </div>
         </div>

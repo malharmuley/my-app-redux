@@ -36,10 +36,10 @@ export function addBooking(booking) {
     return (dispatch) => {
         return axios.post(BASE_URL+"/bookings/addBooking",booking)
         .then(resp => {
-                alert("booking added.");
+                alert("Vehicle rented successfully");
             }
         ).catch(error =>{
-            alert("booking not added.");
+            alert("The vehicle cannot be booked");
         })
     }
 }

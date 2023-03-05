@@ -18,7 +18,7 @@ function AdmNavbar() {
 
     dispatch(logout())
 
-    navigate("/login");
+    navigate("/");
   }
 
 

@@ -62,17 +62,17 @@ function CustomerDashboard() {
                     <h1 className="hilit-color"><marquee><b>The perfect car for your next trip is just around the corner
                         Book your drive now!</b></marquee> </h1>
 
-                    <label for="category" style={ {
+                    {/* <label for="category" style={ {
                         background:"white",
                         color:"black",
                         height:"35px",
                         margin: "20px",
                         textSizeAdjust: "auto"
                       
-                    }}>Select Category:</label>
+                    }}>Select Category:</label> */}
 
                     <select  className="styleselect" name="category" value={category} id="cars" onChange={handleChange}>
-                        <option value="" >--option--</option>
+                        <option value="" >Select Category</option>
                         <option value="suv" >SUV</option>
                         <option value="sedan">SEDAN</option>
                         <option value="mini">MINI</option>

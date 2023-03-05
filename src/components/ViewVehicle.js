@@ -1,38 +1,4 @@
-// import React, { useEffect } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { useParams } from 'react-router-dom';
-// import { viewVehicles } from '../store/actions/VehicleAction';
-// function FetchVehicle() {
-//     const vehicles = useSelector(state => state.vehicleReducer.vehicles);
-//     const dispatch = useDispatch();
-//     const { vehicleId } = useParams();
-//     useEffect(() => {
-//         dispatch(viewVehicles(vehicleId));
-//     }, [vehicleId])
-//     return (
-//         <div>
-//             {
-//                 vehicles !== null &&
-//                 <div>
-//                     <p>VehicleId :{vehicles.vehicleId}</p>
-//                     <p>vehicleNumber :{vehicles.vehicleNumber}</p>
-//                     <p>VehicleType:{vehicles.type}</p>
-//                     <p>VehileCategory:{vehicles.category}</p>
-//                     <p>VehileDescription:{vehicles.description}</p>
-//                     <p>VehicleLocation:{vehicles.location}</p>
-//                     <p>VehicleCapacity:{vehicles.capacity}</p>
-//                     <p>VehicleChargesPerDay:{vehicles.chargesPerDay}</p>
-//                     {/* <p>driverId:{vehicles.driverInfo.driverId}</p>
-//                    <p>FirstName:{vehicles.driverInfo.firstName}</p>
-//                     <p>LastName:{vehicles.driverInfo.lastName}</p>
-//             <p>MobileNumber:{vehicles.driverInfo.MobileNumber}</p> */}
 
-//                 </div>
-//             }
-//         </div>
-//     )
-// }
-// export default FetchVehicle;
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { viewVehicles } from '../store/actions/VehicleAction';
@@ -84,7 +50,9 @@ function ViewVehicle() {
                         <p>VehicleChargesPerDay:{vehicles.chargesPerDay}</p>
                     </li>
                 </ul>
-                <Link to={`/booking/add/${vehicles.vehicleId} `} className="btn btn-info">Book It</Link>
+              
+                    <Link to={`/booking/add/${vehicles.vehicleId} `} className="btn btn-primary">Book It</Link>
+              
             </div>
 
         </div>

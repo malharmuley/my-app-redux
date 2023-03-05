@@ -6,6 +6,8 @@ import { logout } from "../store/actions/LoginAction";
 
 
 
+
+
 function CustNavbar() {
 
     const navigate = useNavigate();
@@ -16,12 +18,8 @@ function CustNavbar() {
     const doLogout = () => {
 
         dispatch(logout());
-        navigate("/login");
-        // if (myuser !== null) {
-        //     localStorage.removeItem("myuser");
-        //     alert("Are you sure to logout");
-        //     navigate("/login");
-        // }
+        navigate("/");
+       
     }
 
     return (

@@ -1,155 +1,11 @@
-// import React, { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import {addUser} from '../store/actions/UserAction';
 
-
-// function AddUser(){
-//     const[fname, setFname] = useState("");
-//     const[lname, setLname] = useState("");
-//     const[email, setEmail] = useState("");
-//     const[uType, setUType] = useState("");
-//     const[password, setPassword] = useState("");
-//      const[city, setCity] = useState("");
-//      const[state, setState] = useState("");
-    
-//     const dispatch = useDispatch();
-//     const [formErrors, setFormErrors] = useState({});
-
-//     const register = () =>{
-//         let errors = {};
-//         if(!fname){
-//              errors['fnameError'] = 'This field is mandatory';
-//         }
-
-//         if(!lname){
-//              errors['lnameError'] = 'This field is mandatory';
-//         }
-
-//         if(!password){
-//              errors['passwordError'] = 'This field is mandatory';
-//         }
-
-//         if(!email){
-//             errors['emailAddressError'] = 'This field is mandatory';
-//        }
-
-// //        if(!city){
-// //         errors['cityError'] = 'This field is mandatory';
-// //    }
-
-// //    if(!state){
-// //     errors['statError'] = 'This field is mandatory';
-// // }
-
-//        setFormErrors(errors);
-//         if(Object.keys(errors).length === 0) {
-
-
-//         const payload ={
-//         firstName : fname,
-//         lastName : lname,
-//         emailAddress : email,
-//         password : password,
-//         userType : uType,
-//         //  address: {
-//         //      city : city,
-//         //      state : state
-//         // }
-    
-//     }
-//     dispatch (addUser(payload))
-
-//     }
-// }
-    
-
-//     return(
-//         <div>
-//             <div>
-//                 <label>FirstName</label>
-//                 <input type = "text" name= "fname" value = {fname}
-//                 onChange= {event => setFname(event.target.value)}/>
-//                 {
-//                     formErrors.fnameError && <div style= {{color: 'red'}}>{formErrors.fnameError}</div>
-//                 }
-//             </div>
-
-//             <div>
-//                 <label>LastName</label>
-//                 <input type = "text" ame= "lname" value = {lname}
-//                 onChange= {event => setLname(event.target.value)}/>
-
-//                       {
-//                          formErrors.lnameError && <div style= {{color: 'red'}}>{formErrors.lnameError}</div>
-//                      }
-//             </div>
-
-//             <div>
-//                 <label>Email</label>
-//                 <input type = "email" name= "email" value = {email}
-//                 onChange= {event => setEmail(event.target.value)}/>
-//                 {
-//                          formErrors.emailAddressError && <div style= {{color: 'red'}}>{formErrors.emailAddressError}</div>
-//                      }
-//             </div>
-            
-
-//             <div>
-//                 <label>Password</label>
-//                 <input type = "password" name= "password" value = {password}
-//                 onChange= {event => setPassword(event.target.value)}/>
-//                 {
-//                          formErrors.passwordError && <div style= {{color: 'red'}}>{formErrors.passwordError}</div>
-//                      }
-//             </div>
-
-//             <div>
-//                 <label>City</label>
-//                 <input type = "text" name= "city" value = {city}
-//                 onChange= {event => setCity(event.target.value)}/>
-//                 {
-//                          formErrors.cityError && <div style= {{color: 'red'}}>{formErrors.cityError}</div>
-//                      }
-//             </div> 
-
-//            <div>
-//                 <label>State</label>
-//                 <input type = "text" name= "state" value = {state}
-//                 onChange= {event => setState(event.target.value)}/>
-//                 {
-//                          formErrors.statError && <div style= {{color: 'red'}}>{formErrors.statError}</div>
-//                      }
-//             </div> 
-
-//             <div>
-//                 <label>Your role</label>
-//                 <input type = "text" name= "uType" value = {uType}
-//                 onChange= {event => setUType(event.target.value)}/>
-            
-//             </div>
-
-            
-
-
-//             <button onClick={register}>Register here</button>
-
-//         </div>
-//     )
-
-// }
-
-// export default AddUser;
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addUser } from "../store/actions/UserAction"; 
 import { Link } from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faUser, faEnvelope, faLock, faCity,faCode, faUserMd, faHouseUser} from '@fortawesome/free-solid-svg-icons';
-import './Adduser.css';
-
-
-
-
+import './Adduser.css'
 
 function AddUser(){
     const[fname, setFname] = useState("");
@@ -380,7 +236,7 @@ function AddUser(){
             <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
             <button onClick={register} type="button" class="btn btn-primary btn-lg" style = {mystyle12}>Register here </button>
 
-             <Link to="/login"> Go to Login</Link>
+             <Link to="/"> Go to Login</Link>
              </div>
              
              

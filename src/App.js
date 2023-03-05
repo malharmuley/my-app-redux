@@ -51,7 +51,7 @@ function App() {
         <Route path="/vehicle/bycat/:category" element={<FetchVehicleByCat />} />
         <Route path="/vehicle/bycap/:capacity" element={<FetchVehicleByCap />} />
 
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/customer/dashboard" element={<CustomerDashboard />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />        
         <Route path="/dashboard" element={<Dashboard />} />

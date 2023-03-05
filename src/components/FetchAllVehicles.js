@@ -24,8 +24,8 @@ function FetchAllVehicles() {
                                 <p class="card-text">{v.vehicleNumber}</p>
                                 <p class="card-text">{v.category}</p>
 
-                                <Link to={`/vehicle/${v.vehicleId}`} className="btn btn-info">View</Link>
-
+                                <Link to={`/vehicle/${v.vehicleId}`} className="btn btn-primary">View</Link>
+                                {/* <Link to={'/admin/dashboard'} className='btn btn-primary'>Go Back</Link> */}
                             </div>
                         </div>
                     )
